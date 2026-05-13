@@ -10,6 +10,9 @@ The platform provides:
 - Aptitude preparation materials
 - A community discussion forum for doubts and answers
 
+## Contributors
+- Ashwini D M (ashwinidm12)
+
 ## Features
 
 ### Notes
@@ -92,11 +95,6 @@ The frontend runs on `http://localhost:3000`.
 1. Start the backend server.
 2. Start the frontend application.
 3. Open `http://localhost:3000` in your browser.
-
-## Author
-
-**Ashwini D M**
-MERN Stack Developer
 
 ## GitHub
 
