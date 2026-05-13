@@ -43,121 +43,51 @@ The system aims to simplify learning by organizing resources and enabling peer i
 - Interactive frontend experience
 
 ## Contributors
-- Ashwini DM (ashwinidm12)
+- Ashwini D M (ashwinidm12)
 - [Add other group members' names here]
 
-## Installation
+## Tech Stack
 
-### Prerequisites
+### Frontend
+- React.js
+- HTML
+- CSS
+- JavaScript
+
+### Backend
 - Node.js
-- MongoDB
-- Docker (optional, for MongoDB)
-
-### Backend Setup
-```bash
-cd server
-npm install
-npm start
-```
-
-### Frontend Setup
-```bash
-cd mce-prep-frontend
-npm install
-npm start
-```
+- Express.js
 
 ### Database
-- MongoDB runs on localhost:27017
-- Or use Docker: `docker run -d --name notesync-mongodb -p 27017:27017 mongo:latest`
+- MongoDB
 
-## Usage
-1. Start the backend server
-2. Start the frontend application
-3. Access the application at http://localhost:3000
-
-## Technologies Used
-- **Frontend**: React.js
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT
-- **File Upload**: Multer
+### Version Control
+- Git
+- GitHub
 
 ## Project Structure
 ```
 Notesyncminiproject/
 ├── server/                 # Backend (Node.js/Express)
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   └── server.js
 ├── mce-prep-frontend/      # Frontend (React)
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.js
+│   └── package.json
 ├── note-sync/             # Additional React app
 ├── pyq-uploads/           # Uploaded PYQ files
 ├── uploads/               # General uploads
 └── README.md
 ```
 
-## License
-This project is for educational purposes.
-
----
-
-# Tech Stack
-
-### Frontend
-
-* React.js
-* HTML
-* CSS
-* JavaScript
-
-Frontend code is located in:
-
-```
-mce-prep-frontend
-```
-
-### Backend
-
-* Node.js
-* Express.js
-
-### Database
-
-* MongoDB
-
-### Version Control
-
-* Git
-* GitHub
-
----
-
-# Project Structure
-
-```
-NoteSync
-│
-├── backend
-│   ├── controllers
-│   ├── routes
-│   ├── models
-│   ├── middleware
-│   └── server.js
-│
-├── mce-prep-frontend
-│   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── services
-│   │   └── App.js
-│   │
-│   └── package.json
-│
-└── README.md
-```
-
----
-
-# System Architecture
-
+## System Architecture
 ```
                 ┌─────────────────────┐
                 │      Frontend       │
@@ -182,108 +112,58 @@ NoteSync
                 └─────────────────────┘
 ```
 
----
+## Installation and Setup
 
-# Installation and Setup
+### Prerequisites
+- Node.js
+- MongoDB
+- Docker (optional, for MongoDB)
 
-## 1. Clone Repository
-
+### 1. Clone Repository
+```bash
+git clone https://github.com/ashwinidm12/Notesyncminiproject.git
 ```
-git clone https://github.com/Ankitha2807/NoteSync.git
-```
 
----
-
-## 2. Backend Setup
-
-Navigate to backend folder
-
-```
+### 2. Backend Setup
+```bash
 cd server
-```
-
-Install dependencies
-
-```
 npm install
-```
-
-Start server
-
-```
 npm start
 ```
+Backend runs on: `http://localhost:5000`
 
-Backend runs on:
-
-```
-http://localhost:5000
-```
-
----
-
-## 3. Frontend Setup
-
-Navigate to frontend folder
-
-```
+### 3. Frontend Setup
+```bash
 cd mce-prep-frontend
-```
-
-Install dependencies
-
-```
 npm install
-```
-
-Run frontend
-
-```
 npm start
 ```
+Frontend runs on: `http://localhost:3000`
 
-Frontend runs on:
+### Database
+- MongoDB runs on localhost:27017
+- Or use Docker: `docker run -d --name notesync-mongodb -p 27017:27017 mongo:latest`
 
-```
-http://localhost:3000
-```
+## Usage
 
----
-
-# Usage
-
-Students can:
-
+### For Students:
 1. Browse notes for different semesters
 2. Access previous year question papers
 3. Practice aptitude questions
 4. Post questions and answers in the discussion forum
 5. Collaborate and learn from peers
 
-Admins can:
+### For Admins:
+1. File upload for notes and study materials
+2. Upload answers for student questions
+3. Post aptitude questions
+4. Upload year-wise question papers
 
-1.File upload for notes and study materials
-2.Upload answers for the questions which the students are asking for
-3.Post aptitude questions
-4.Upload year wise question papers
+## Future Improvements
+- AI-based doubt answering system
+- Personalized learning recommendations
+- Quiz and test modules
+- Notifications for answers and discussions
 
----
-
-# Future Improvements
-
-Possible future enhancements:
-
-* AI-based doubt answering system
-* Personalized learning recommendations
-* Quiz and test modules
-* Notifications for answers and discussions
-
----
-
-# Author
-
-**Ankitha K N**
-MERN Stack Developer
-
-
-# Notesyncminiproject
+## License
+This project is for educational purposes.
